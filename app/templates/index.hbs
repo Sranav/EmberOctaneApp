@@ -1,0 +1,25 @@
+
+<button {{action 'snap'}}>{{if this.snapped 'unsnap' 'snap'}}</button>
+
+
+
+<div class="main-code-box">
+
+  {{#each this.shownGists as |gist|}}
+  <div class="file-block">
+    <div class="file-header">
+      <h2>
+        {{gist.description}}
+      </h2>
+      <small>
+        {{gist.fileName}}
+      </small>
+    </div>
+    <div class="code-box">
+      <CodeBlock @language="javascript">
+        {{gist.body}}
+      </CodeBlock>
+    </div>
+  </div>
+  {{/each}}
+</div>
