@@ -163,3 +163,18 @@ input::placeholder {
   border-radius: 0.25em;
   cursor: pointer;
 }
+
+.footer {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  li {
+    margin: 0 15px;
+  }
+}
